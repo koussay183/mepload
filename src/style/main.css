@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Hubballi", cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.UserLogin {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0d1d3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+.UserLogin form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.UserLogin form h1 {
+  color: white;
+  text-align: center;
+}
+
+.UserLogin form input[type="text"],
+.UserLogin form input[type="password"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 0.8em 1em;
+}
+
+.UserLogin form input[type="submit"] {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  background-color: white;
+  color: #0d1d3a;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.5em 0;
+  -webkit-transition: letter-spacing 0.2s ease-in-out;
+  transition: letter-spacing 0.2s ease-in-out;
+}
+
+.UserLogin form input[type="submit"]:hover {
+  letter-spacing: 0.3em;
+}
+
+.Loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0d1d3a;
+  top: 0;
+  left: 0;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.Home {
+  position: relative;
+  width: 100%;
+}
+
+.Home nav {
+  position: relative;
+  width: 100%;
+  background-color: #0d1d3a;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.Home nav span {
+  color: white;
+  font-size: 2em;
+}
+
+.Home nav button {
+  outline: none;
+  border: none;
+  background-color: white;
+  color: #0d1d3a;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 0.5em 0.7em;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.Home nav button:hover {
+  background-color: #df1e1e;
+  color: white;
+}
+
+.Home main {
+  position: relative;
+  width: 100%;
+  padding: 0.5em 1.5em;
+}
+
+.Home main .commentHolder {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Home main .commentHolder .roomComment {
+  text-transform: capitalize;
+  color: #0d1d3a;
+  font-size: 1.5em;
+  text-align: justify;
+  max-width: 900px;
+}
+
+.Home main .commentHolder img {
+  width: 100%;
+  max-width: 250px;
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .Home main .commentHolder img {
+    display: block;
+  }
+}
+
+.filesHolder {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.File {
+  position: relative;
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+  padding: 0.5em 0.7em;
+  border: 2px solid #cfcfcf;
+  cursor: pointer;
+  margin: 0.5em;
+}
+
+.File span {
+  font-size: 1.2em;
+  color: #0d1d3a;
+  padding-left: 0.25em;
+}
+/*# sourceMappingURL=main.css.map */

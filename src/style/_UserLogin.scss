@@ -1,0 +1,46 @@
+.UserLogin {
+  position: relative;
+  min-height: 100vh;
+  background-color: $main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      padding: 0.8em 1em;
+    }
+    input[type="submit"] {
+      width: 100%;
+      outline: none;
+      border: none;
+      font-size: 1.3em;
+      text-transform: capitalize;
+      background-color: white;
+      color: $main;
+      padding: 0.5em;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0.5em 0;
+      transition: letter-spacing 0.2s ease-in-out;
+      &:hover {
+        letter-spacing: 0.3em;
+      }
+    }
+  }
+}

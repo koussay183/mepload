@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+$main: #0d1d3a;
+$font: "Hubballi", cursive;
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: $font;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import "./UserLogin";
+@import "./Loading";
+@import "./Home";
